@@ -177,7 +177,7 @@ http_conn::HTTP_CODE http_conn::parse_request_line(char* text) {
         return BAD_REQUEST;
     }
     /**
-     * http://192.168.110.129:10000/index.html
+     * http://192.168.28.10:10000/index.html
     */
     if (strncasecmp(m_url, "http://", 7) == 0 ) {   
         m_url += 7;
