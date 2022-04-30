@@ -6,7 +6,6 @@
 3. 运行可执行文件app： ./app 10000
 4. 浏览器访问服务器：服务器IP地址:10000/index.html
 5. 压力测试：先cd进入test_presure\webbench-1.5文件夹，然后使用 `make` 命令，
-6.
  ```cpp
  ./webbench -c 1000 -t 5 服务器IP地址:10000/index.html
 参数：
