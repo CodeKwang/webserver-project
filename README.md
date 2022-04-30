@@ -7,7 +7,7 @@ Linux系统下基于C++开发的轻量级、高性能、高并发的web服务器
 线程池、非阻塞socket、epoll、事件处理，状态机解析HTTP请求
 
 ## 运行项目的注意事项
-1. 需要修改项目中网站的根目录，在http_conn.cpp文件中14行，修改网页.index.html所在文件夹的路径
+1. 需要修改项目中网站的根目录，在http_conn.cpp文件中15行，修改网页.index.html所在文件夹的路径
 2. 生成可执行文件命令行： `g++ *.cpp -o app -pthread`
 3. 运行可执行文件app： ./app 10000
 4. 浏览器访问服务器：服务器IP地址:10000/index.html
