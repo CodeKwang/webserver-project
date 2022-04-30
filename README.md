@@ -1,6 +1,6 @@
 # webserver-project
 
-# 运行项目的注意事项
+## 运行项目的注意事项
 1. 需要修改项目中网站的根目录，在http_conn.cpp文件中14行，修改网页.index.html所在文件夹的路径
 2. 生成可执行文件命令行： `g++ *.cpp -o app -pthread`
 3. 运行可执行文件app： ./app 10000
@@ -33,11 +33,10 @@ template<typename T>
 class threadpool
 ```
 ## http_conn.h
-定义http_conn类
+定义http_conn类，http_conn类主要解析HTTP请求，然后生成响应
 
 ## http_conn.cpp
 http_conn类成员函数具体实现和几个epoll需要的函数
-http_conn类主要解析HTTP请求，然后生成响应
 
 ## main.cpp
 主函数，创建套接字，实现与客户端进行连接，并加入epoll对象，使用线程池处理事件
